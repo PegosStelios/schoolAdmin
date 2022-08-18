@@ -1,10 +1,10 @@
 ## Development Enviroment
 I run laravel under [Laragon](https://laragon.org/).
 
-PHP Version - 8.1.9 
-MySQL Version - 5.7.33
-NGINX Version - 1.19.10
-NodeJS Version - 16.17.0
+PHP Version 8.1.9 |
+MySQL Version  5.7.33 |
+NGINX Version  1.19.10 |
+NodeJS Version 16.17.0 |
 
 
 ## Code of Conduct
