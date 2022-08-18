@@ -15,25 +15,11 @@ use App\Models\Student;
 */
 
 // Every Student
-Route::get('/', function () {
-    return view('students', [
-        'students' => Student::all()
-    ]);
-});
+Route::get('/', 'App\Http\Controllers\StudentController@index');
 
 // Signle Student
-Route::get('/student/{id}', function ($id) {
-    return view('student', [
-        'student' => Student::find($id)
-    ]);
-});
+Route::get('/student/{id}', 'App\Http\Controllers\StudentController@show');
 
-Route::get('/createStudent', function () {
-    return view('createStudent');
-});
+Route::get('/createStudent', 'App\Http\Controllers\StudentController@create');
 
-Route::get('/editStudent/{id}', function ($id) {
-    return view('editStudent', [
-        'student' => Student::find($id)
-    ]);
-});
+Route::get('/editStudent/{id}', 'App\Http\Controllers\StudentController@edit');
