@@ -43,6 +43,15 @@
                                 type="text" name="lastName" placeholder="180" value="{{ $student->age }}" />
                         </div>
 
+                        <div>
+                            <label class="block text-sm font-bold text-gray-700" for="title">
+                                Date of Birth
+                            </label>
+
+                            <input
+                                class="block w-full mt-1 border-gray-300 rounded-md shadow-sm placeholder:text-gray-400 placeholder:text-right focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
+                                type="text" name="dob" placeholder="180" value="{{ $student->dob }}" />
+                        </div>
 
                         <div>
                             <label class="block text-sm font-bold text-gray-700" for="title">

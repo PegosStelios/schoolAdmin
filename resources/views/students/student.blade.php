@@ -16,6 +16,7 @@
                     Name: {{ $student->name }} <br>
                     Last Name: {{ $student->lastName }} <br>
                     Age: {{ $student->age }} <br>
+                    Date of Birth: {{ $student->dob }} <br>
                     Email: {{ $student->email }} <br>
                     Telephone: {{ $student->telephone }} <br>
                     Address: {{ $student->address }}, {{ $student->city }}, {{ $student->zip }} <br>
