@@ -23,6 +23,7 @@ class StudentFactory extends Factory
             'name' => $faker->firstName,
             'lastName' => $faker->lastName,
             'age' => random_int(18, 60),
+            'dob' => $faker->date,
             'email' => $faker->email,
             'telephone' => $faker->phoneNumber,
             'address' => $faker->address,
