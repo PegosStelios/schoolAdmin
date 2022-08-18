@@ -27,3 +27,13 @@ Route::get('/student/{id}', function ($id) {
         'student' => Student::find($id)
     ]);
 });
+
+Route::get('/createStudent', function () {
+    return view('createStudent');
+});
+
+Route::get('/editStudent/{id}', function ($id) {
+    return view('editStudent', [
+        'student' => Student::find($id)
+    ]);
+});
