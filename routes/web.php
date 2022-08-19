@@ -3,6 +3,8 @@
 use Illuminate\Support\Facades\Route;
 use Illuminate\Http\Request;
 use App\Models\Student;
+use App\Models\User;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -38,3 +40,10 @@ Route::delete('/students/deleteStudent/{id}', 'App\Http\Controllers\StudentContr
 
 // Update Student
 Route::put('/students/updateStudent/{id}', 'App\Http\Controllers\StudentController@update');
+
+
+// Register User
+Route::get('/register','App\Http\Controllers\UserController@create');
+
+// Create New User
+Route::post('/users','App\Http\Controllers\UserController@store');
