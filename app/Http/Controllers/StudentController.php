@@ -55,9 +55,10 @@ class StudentController extends Controller {
         return redirect('/students/students')->with('message', 'Student created successfully');
     }
 
-    public function update(Request $request, Student $student) {
+    public function update(Request $request, Student $student, $id) {
         // all are required
         $formFields = $request->validate([
+            //'id' => 'required',
             'name' => 'required',
             'lastName' => 'required',
             'age' => 'required',
@@ -75,9 +76,15 @@ class StudentController extends Controller {
             'gpa' => 'required',
             'subject' => 'required',
         ]);
+        //ddd($formFields);
+        $student = Student::findOrFail($id);
+        $student->update($formFields);
+        return redirect('/students/students')->with('message', 'Student updated successfully');
+    }
 
-        $student->create($formFields);
-
-        return back()->with('message', 'Student updated successfully');
+    public function delete(Student $student, $id) {
+        $student = Student::findOrFail($id);
+        $student->delete();
+        return redirect('/students/students')->with('message', 'Student deleted successfully');
     }
 }

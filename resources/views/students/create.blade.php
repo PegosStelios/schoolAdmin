@@ -11,7 +11,7 @@
                 </div>
 
                 <div class="w-full px-6 py-4 bg-white rounded shadow-md ring-1 ring-gray-900/10">
-                    <form method="POST" action="/students/storeStudent">
+                    <form method="POST" action="/students/storeStudent" enctype="multipart/form-data">
                         <!-- Title -->
                         @csrf
                         <div>

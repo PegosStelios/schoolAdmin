@@ -30,5 +30,11 @@ Route::get('/students/createStudent', 'App\Http\Controllers\StudentController@cr
 // Create Student
 Route::post('/students/storeStudent', 'App\Http\Controllers\StudentController@store');
 
-// Edit Student
+// Show Edit Student
 Route::get('/students/editStudent/{id}', 'App\Http\Controllers\StudentController@edit');
+
+// Delete Student
+Route::delete('/students/deleteStudent/{id}', 'App\Http\Controllers\StudentController@delete');
+
+// Update Student
+Route::put('/students/updateStudent/{id}', 'App\Http\Controllers\StudentController@update');
