@@ -8,6 +8,7 @@
     @vite('resources/css/app.css')
     @vite('resources/js/app.js')
     <script src="https://cdn.tailwindcss.com/?plugins=forms"></script>
+    <script src="//unpkg.com/alpinejs" defer></script>
     <title>School Administration</title>
 </head>
 
@@ -45,6 +46,8 @@
     </nav>
 
     @yield('content')
+
+    <x-flash-message />
 </body>
 
 </html>

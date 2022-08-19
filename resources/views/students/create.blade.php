@@ -21,7 +21,7 @@
 
                             <input
                                 class="block w-full mt-1 border-gray-300 rounded-md shadow-sm placeholder:text-gray-400 placeholder:text-right focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
-                                type="text" name="name" value="" />
+                                type="text" name="name" value="{{ old('name') }}" />
                             @error('name')
                                 <div class="text-red-500 text-sm">{{ $message }}</div>
                             @enderror
@@ -34,7 +34,7 @@
 
                             <input
                                 class="block w-full mt-1 border-gray-300 rounded-md shadow-sm placeholder:text-gray-400 placeholder:text-right focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
-                                type="text" name="lastName" value="" />
+                                type="text" name="lastName" value="{{ old('lastName') }}" />
                             @error('lastName')
                                 <div class="text-red-500 text-sm">{{ $message }}</div>
                             @enderror
@@ -48,7 +48,7 @@
 
                             <input
                                 class="block w-full mt-1 border-gray-300 rounded-md shadow-sm placeholder:text-gray-400 placeholder:text-right focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
-                                type="number" name="age" value="" />
+                                type="number" name="age" value="{{ old('age') }}" />
                             @error('age')
                                 <div class="text-red-500 text-sm">{{ $message }}</div>
                             @enderror
@@ -61,7 +61,7 @@
 
                             <input
                                 class="block w-full mt-1 border-gray-300 rounded-md shadow-sm placeholder:text-gray-400 placeholder:text-right focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
-                                type="text" name="dob" value="" />
+                                type="text" name="dob" value="{{ old('dob') }}" />
                             @error('dob')
                                 <div class="text-red-500 text-sm">{{ $message }}</div>
                             @enderror
@@ -74,7 +74,7 @@
 
                             <input
                                 class="block w-full mt-1 border-gray-300 rounded-md shadow-sm placeholder:text-gray-400 placeholder:text-right focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
-                                type="email" name="email" value="" />
+                                type="email" name="email" value="{{ old('email') }}" />
                             @error('email')
                                 <div class="text-red-500 text-sm">{{ $message }}</div>
                             @enderror
@@ -88,7 +88,7 @@
 
                             <input
                                 class="block w-full mt-1 border-gray-300 rounded-md shadow-sm placeholder:text-gray-400 placeholder:text-right focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
-                                type="text" name="telephone" value="" />
+                                type="text" name="telephone" value="{{ old('telephone') }}" />
                             @error('telephone')
                                 <div class="text-red-500 text-sm">{{ $message }}</div>
                             @enderror
@@ -101,7 +101,7 @@
 
                             <input
                                 class="block w-full mt-1 border-gray-300 rounded-md shadow-sm placeholder:text-gray-400 placeholder:text-right focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
-                                type="text" name="city" value="" />
+                                type="text" name="city" value="{{ old('city') }}" />
                             @error('city')
                                 <div class="text-red-500 text-sm">{{ $message }}</div>
                             @enderror
@@ -114,7 +114,7 @@
 
                             <input
                                 class="block w-full mt-1 border-gray-300 rounded-md shadow-sm placeholder:text-gray-400 placeholder:text-right focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
-                                type="text" name="zip" value="" />
+                                type="text" name="zip" value="{{ old('zip') }}" />
                             @error('zip')
                                 <div class="text-red-500 text-sm">{{ $message }}</div>
                             @enderror
@@ -127,7 +127,7 @@
 
                             <input
                                 class="block w-full mt-1 border-gray-300 rounded-md shadow-sm placeholder:text-gray-400 placeholder:text-right focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
-                                type="text" name="address" value="" />
+                                type="text" name="address" value="{{ old('address') }}" />
                             @error('address')
                                 <div class="text-red-500 text-sm">{{ $message }}</div>
                             @enderror
@@ -140,7 +140,7 @@
 
                             <input
                                 class="block w-full mt-1 border-gray-300 rounded-md shadow-sm placeholder:text-gray-400 placeholder:text-right focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
-                                type="text" name="fatherName" value="" />
+                                type="text" name="fatherName" value="{{ old('fatherName') }}" />
                             @error('fatherName')
                                 <div class="text-red-500 text-sm">{{ $message }}</div>
                             @enderror
@@ -153,7 +153,7 @@
 
                             <input
                                 class="block w-full mt-1 border-gray-300 rounded-md shadow-sm placeholder:text-gray-400 placeholder:text-right focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
-                                type="text" name="fatherLastName" value="" />
+                                type="text" name="fatherLastName" value="{{ old('fatherLastName') }}" />
                             @error('fatherLastName')
                                 <div class="text-red-500 text-sm">{{ $message }}</div>
                             @enderror
@@ -166,7 +166,7 @@
 
                             <input
                                 class="block w-full mt-1 border-gray-300 rounded-md shadow-sm placeholder:text-gray-400 placeholder:text-right focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
-                                type="number" name="semester" value="" />
+                                type="number" name="semester" value="{{ old('semester') }}" />
                             @error('semester')
                                 <div class="text-red-500 text-sm">{{ $message }}</div>
                             @enderror
@@ -179,7 +179,7 @@
 
                             <input
                                 class="block w-full mt-1 border-gray-300 rounded-md shadow-sm placeholder:text-gray-400 placeholder:text-right focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
-                                type="number" name="examResult" value="" />
+                                type="number" name="examResult" value="{{ old('examResult') }}" />
                             @error('examResult')
                                 <div class="text-red-500 text-sm">{{ $message }}</div>
                             @enderror
@@ -192,7 +192,7 @@
 
                             <input
                                 class="block w-full mt-1 border-gray-300 rounded-md shadow-sm placeholder:text-gray-400 placeholder:text-right focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
-                                type="number" name="absence" value="" />
+                                type="number" name="absence" value="{{ old('absence') }}" />
                             @error('absence')
                                 <div class="text-red-500 text-sm">{{ $message }}</div>
                             @enderror
@@ -205,7 +205,7 @@
 
                             <input
                                 class="block w-full mt-1 border-gray-300 rounded-md shadow-sm placeholder:text-gray-400 placeholder:text-right focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
-                                type="number" name="gpa" value="" />
+                                type="number" name="gpa" value="{{ old('gpa') }}" />
                             @error('gpa')
                                 <div class="text-red-500 text-sm">{{ $message }}</div>
                             @enderror
@@ -218,7 +218,7 @@
 
                             <input
                                 class="block w-full mt-1 border-gray-300 rounded-md shadow-sm placeholder:text-gray-400 placeholder:text-right focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
-                                type="text" name="subject" value="" />
+                                type="text" name="subject" value="{{ old('subject') }}" />
                             @error('subject')
                                 <div class="text-red-500 text-sm">{{ $message }}</div>
                             @enderror
@@ -229,10 +229,9 @@
                                 class="px-6 py-2 text-sm font-semibold rounded-md shadow-md text-sky-100 bg-sky-500 hover:bg-sky-700 focus:outline-none focus:border-gray-900 focus:ring ring-gray-300">
                                 Create
                             </button>
-                            <button type="reset" value="Reset"
+                            <a href="/students/students"
                                 class="px-6 py-2 text-sm font-semibold text-gray-100 bg-gray-400 rounded-md shadow-md hover:bg-gray-600 focus:outline-none focus:border-gray-900 focus:ring ring-gray-300">
-                                Cancel
-                            </button>
+                                Cancel </a>
                         </div>
                     </form>
                 </div>

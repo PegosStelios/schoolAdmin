@@ -52,6 +52,32 @@ class StudentController extends Controller {
 
         Student::create($formFields);
 
-        return redirect('/students/students')->with('success', 'Student created successfully');
+        return redirect('/students/students')->with('message', 'Student created successfully');
+    }
+
+    public function update(Request $request, Student $student) {
+        // all are required
+        $formFields = $request->validate([
+            'name' => 'required',
+            'lastName' => 'required',
+            'age' => 'required',
+            'dob' => 'required',
+            'email' => ['required', 'email'],
+            'telephone' => 'required',
+            'city' => 'required',
+            'zip' => 'required',
+            'address' => 'required',
+            'fatherName' => 'required',
+            'fatherLastName' => 'required',
+            'semester' => 'required',
+            'examResult' => 'required',
+            'absence' => 'required',
+            'gpa' => 'required',
+            'subject' => 'required',
+        ]);
+
+        $student->create($formFields);
+
+        return back()->with('message', 'Student updated successfully');
     }
 }
