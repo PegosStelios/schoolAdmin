@@ -7,7 +7,7 @@
             <div class="mb-4">
                 <h1 class="font-serif text-3xl font-bold underline decoration-gray-400"> Student Index</h1>
                 <div class="flex justify-end">
-                    <button class="px-4 py-2 rounded-md bg-sky-500 text-sky-100 hover:bg-sky-600">Add Student</button>
+                    <a href="/students/createStudent"><button class="px-4 py-2 rounded-md bg-sky-500 text-sky-100 hover:bg-sky-600">Add Student</button></a>
                 </div>
             </div>
             <div class="flex flex-col">
@@ -62,7 +62,7 @@
 
                                         <td
                                             class="text-sm font-medium leading-5 text-center whitespace-no-wrap border-b border-gray-200 ">
-                                            <a href="/editStudent/{{ $student->id }}"
+                                            <a href="/students/editStudent/{{ $student->id }}"
                                                 class="text-indigo-600 hover:text-indigo-900">
                                                 <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none"
                                                     viewBox="0 0 24 24" stroke="currentColor">
@@ -73,7 +73,7 @@
 
                                         <td
                                             class="text-sm font-medium leading-5 text-center whitespace-no-wrap border-b border-gray-200 ">
-                                            <a href="/student/{{ $student->id }}" class="text-gray-600 hover:text-gray-900">
+                                            <a href="/students/student/{{ $student->id }}" class="text-gray-600 hover:text-gray-900">
                                                 <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none"
                                                     viewBox="0 0 24 24" stroke="currentColor">
                                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
