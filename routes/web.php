@@ -14,12 +14,21 @@ use App\Models\Student;
 |
 */
 
+Route::get('/', function () {
+    return view('main');
+});
+
 // Every Student
-Route::get('/', 'App\Http\Controllers\StudentController@index');
+Route::get('/students/students', 'App\Http\Controllers\StudentController@index');
 
-// Signle Student
-Route::get('/student/{id}', 'App\Http\Controllers\StudentController@show');
+// Single Student
+Route::get('/students/student/{id}', 'App\Http\Controllers\StudentController@show');
 
-Route::get('/createStudent', 'App\Http\Controllers\StudentController@create');
+// Create Student
+Route::get('/students/createStudent', 'App\Http\Controllers\StudentController@create');
 
-Route::get('/editStudent/{id}', 'App\Http\Controllers\StudentController@edit');
+// Create Student
+Route::post('/students/storeStudent', 'App\Http\Controllers\StudentController@store');
+
+// Edit Student
+Route::get('/students/editStudent/{id}', 'App\Http\Controllers\StudentController@edit');

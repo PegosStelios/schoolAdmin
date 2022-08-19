@@ -13,19 +13,45 @@ class StudentController extends Controller {
         ]);
     }
 
-    public static function show($id) {
+    public function show($id) {
         return view('students.student', [
             'student' => Student::find($id)
         ]);
     }
 
-    public static function edit($id) {
+    public function edit($id) {
         return view('students.edit', [
             'student' => Student::find($id)
         ]);
     }
 
-    public static function create() {
+    public function create() {
         return view('students.create');
+    }
+
+    public function store(Request $request) {
+        // all are required
+        $formFields = $request->validate([
+            'name' => 'required',
+            'lastName' => 'required',
+            'age' => 'required',
+            'dob' => 'required',
+            'email' => ['required', 'email'],
+            'telephone' => 'required',
+            'city' => 'required',
+            'zip' => 'required',
+            'address' => 'required',
+            'fatherName' => 'required',
+            'fatherLastName' => 'required',
+            'semester' => 'required',
+            'examResult' => 'required',
+            'absence' => 'required',
+            'gpa' => 'required',
+            'subject' => 'required',
+        ]);
+
+        Student::create($formFields);
+
+        return redirect('/students/students')->with('success', 'Student created successfully');
     }
 }
